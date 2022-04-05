@@ -193,7 +193,7 @@ def Question9(barcodes):
                 packs_byProd.insert(0, pack)
             else:
                 packs_byProd.append(pack)
-        packs_byReg[region] = packs_byProd
+        packs_byReg[region] = reversed(packs_byProd)
 
     for packs in packs_byReg.values():
         for pack in packs:
